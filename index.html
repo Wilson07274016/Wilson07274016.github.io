@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>你的名字 | 一頁式作品集</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    .highlight {
+      color: #00bfa6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00bfa6;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00bfa6;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    form button {
+      background: #00bfa6;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00bfa6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#portfolio">作品集</a>
+    <a href="#resume">履歷</a>
+    <a href="#contact">聯絡</a>
+  </nav>
+
+  <header>
+    <h1>我是 <span class="highlight">你的名字</span></h1>
+    <p>專注於 <strong>前端開發 / UI設計 / 數位行銷</strong> 的創作者</p>
+    <a href="#contact" class="btn">聯絡我</a>
+  </header>
+
+  <section id="about">
+    <h2>關於我</h2>
+    <p>我熱愛解決問題、打造人性化的數位體驗，擁有超過 3 年在 UI/UX、前端開發、SEO 優化方面的實務經驗。擅長使用 HTML、CSS、JavaScript、React 與 Figma 等工具。</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>作品集</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        <h3>React SPA 網站</h3>
+        <p>使用 React + Tailwind 製作的個人專案，支援深色模式與動態切換。</p>
+        <a href="https://github.com/yourgithub" target="_blank">查看 GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        <h3>UI 設計案例</h3>
+        <p>協助新創公司設計完整 App UI，並建立設計系統。</p>
+        <a href="#">查看設計稿</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>履歷</h2>
+    <p>你可以點擊下方按鈕下載我的 PDF 履歷。</p>
+    <a href="resume.pdf" class="btn" download>下載履歷</a>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="你的名字" required>
+      <input type="email" name="email" placeholder="電子郵件" required>
+      <textarea name="
